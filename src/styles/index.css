@@ -1,0 +1,174 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+}
+
+.industrial-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+} */
+
+/* POPPINS + ROBOTO FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* TAILWIND CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* BASE RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* POPPINS AS DEFAULT FONT */
+body {
+  font-family: 'Poppins', 'Roboto', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #374151;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* FONT UTILITIES */
+.font-poppins { font-family: 'Poppins', 'Roboto', sans-serif; }
+.font-roboto { font-family: 'Roboto', 'Poppins', sans-serif; }
+
+/* POPPINS WEIGHT UTILITIES */
+.font-poppins-thin { font-family: 'Poppins', sans-serif; font-weight: 100; }
+.font-poppins-extralight { font-family: 'Poppins', sans-serif; font-weight: 200; }
+.font-poppins-light { font-family: 'Poppins', sans-serif; font-weight: 300; }
+.font-poppins-regular { font-family: 'Poppins', sans-serif; font-weight: 400; }
+.font-poppins-medium { font-family: 'Poppins', sans-serif; font-weight: 500; }
+.font-poppins-semibold { font-family: 'Poppins', sans-serif; font-weight: 600; }
+.font-poppins-bold { font-family: 'Poppins', sans-serif; font-weight: 700; }
+.font-poppins-extrabold { font-family: 'Poppins', sans-serif; font-weight: 800; }
+.font-poppins-black { font-family: 'Poppins', sans-serif; font-weight: 900; }
+
+/* HEADINGS WITH POPPINS */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+/* FORM ELEMENTS */
+button, input, textarea, select {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* YOUR EXISTING GRADIENT */
+.gradient-bg {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+}
+
+/* YOUR EXISTING INDUSTRIAL SHADOW */
+.industrial-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* YOUR EXISTING HOVER LIFT */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* ADDITIONAL ENHANCED UTILITIES */
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow-lg {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* SMOOTH SCROLLING */
+html {
+  scroll-behavior: smooth;
+}
+
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+/* FOCUS STATES */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* SELECTION COLORS */
+::selection {
+  background-color: #3b82f6;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #3b82f6;
+  color: white;
+}
+
+/* RESPONSIVE TYPOGRAPHY */
+@media (max-width: 640px) {
+  body { font-size: 14px; }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  body { font-size: 15px; }
+}
+
+@media (min-width: 1025px) {
+  body { font-size: 16px; }
+}
+
